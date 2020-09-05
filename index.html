@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="imagenes/Samurindo.jpg">
+	<meta charset="UTF-8">
+	<title>Way to the future</title>
+	<style>
+		*{
+			margin:0;
+			padding: 0;
+		}
+		body{
+			/*margin:0px;*/
+			padding: 0px 50px;
+		}
+		div{
+			margin: 0px;
+		}
+
+		/*Encabezado*/
+		div.encabezado{
+			height: 250px;
+			background-image: url("imagenes/intec1.png");
+			background-repeat: no-repeat;
+  			background-position: right top;
+  			background-size: 100% 100%;
+			color:black;
+			text-align: center;
+			padding-top: 120px;
+		}
+		/*menu*/
+		div.menu{
+			
+			margin: auto;
+			/*text-align: left;*/
+			font-family:Arial, Helvetica, sans-serif;
+			/*padding: 12px 0;*/
+		}
+		/*PARA QUE DESAPARESCAN LOS ESTILOS COMO PUNTOS*/
+		ul, ol{
+			list-style: none;
+		}
+		/*ACOMODAR EL MENÙ*/
+		.nav > li{
+			float: left;
+		}
+		.nav li a{
+			background-color:#34495E ;
+			color: #fff;
+			text-decoration: none;
+			padding: 10px 12px;
+			display: block;
+		}
+		.nav li a:hover{
+			background-color:#000;
+		}
+		/*ORGANIZAR MENU*/
+		.nav li ul{
+			display: none;
+			position: absolute;
+			min-width: 140px;
+		}
+		/*PARA DESPLEGAR MENU*/
+		.nav li:hover > ul{
+			display: block;
+		}
+		/*CONTIENE CONTENIDO Y PUBLICIDAD*/
+		div.contenedor{
+			background: #D3d3d3;
+			width: 100%;
+			height: 600px;
+		}
+		/*creo que es este contenid*/
+		div.contenido{
+			float:left;
+			width: 70%;
+			height: 100%;
+			background:white;
+			color:black;
+			overflow-y: auto;
+			
+		}
+/*PARA QUE PUEDA BAJE Y SUBA*/
+		div.contenido div {
+			padding: 20px 15px 20px 15px;
+			text-align: justify;
+			
+		}
+		div.contenido div > h1, h2,h3,h4,h5,h6{
+			text-align: center;
+			padding-bottom: 15px; 
+		}
+
+         /*publici*/
+		div.publicidad{
+			float:left;
+			width: 30%;
+			height: 100%;
+			background:midnightblue;
+			color:white;
+		}
+
+		/*pie */
+		div.pie_pagina{
+			clear: both;
+			height: 100px;
+			background: black;
+			color: white;
+			text-align: center;
+			/*padding: 12px 0;*/
+		}
+
+		
+		div.informacion{
+			padding: 10px; 
+			
+
+
+		}
+
+	
+
+		img.banner{
+			height: 440px;
+			width: auto;
+			background-repeat: no-repeat;
+  			background-position: left top;
+  			margin:0 auto;
+  			border: 5px inset;
+		}
+		img.centrado{
+			display: block;
+			height: 300px;
+			width: auto;
+			background-repeat: no-repeat;
+  			background-position: left top;
+  			border: 5px solid;
+  			margin: 0 auto 5px auto;
+		}
+		
+
+	
+		div#elementosGaleria > img{
+			float: left;
+			width: 40%;
+			height: auto;
+			margin-right: 20px;
+			border: 5px inset;
+		}
+		.estrofa{
+			margin: 0 auto;
+			text-align: center;
+			width: 50%;
+		}
+		p.justificado{
+			padding: 5px;
+			/*border: 3px dotted skyblue;*/
+			font-size: 17px;
+			text-align: justify;
+			color: blue;
+			/*background: #D3d3d3;*/
+		}
+		
+
+		span{
+
+			font-size: 20px;
+
+		}
+
+		
+
+		
+		/*img.semilla3{
+
+			width: 750px;
+
+
+		}
+		
+
+		img.princi{
+
+			height: 400px;
+			width: 700px;
+
+		}*/
+
+
+		div.encabezado  h1{
+
+			font-size:45px;
+			color:;
+
+
+		}
+
+		
+
+
+
+	</style>
+</head>
+<body>
+	<div class="encabezado">
+		<h1>Way to the Future</h1>
+		
+		<h20>INNOVACIONES TECNOLOGICAS.</h20>
+	</div>
+	<div class="menu">
+		<ul class="nav">
+			<li>
+				<a href="#inicio">Inicio</a>
+			</li>
+			<li>
+				<a href="">Telecomunicaciones</a>
+				<ul>
+					<li><a href="#contenido2" >5G</a></li>
+					<li><a href="#galeria">Wifi 6</a></li>
+					<li><a href="#galeria1"> Big data</a></li>
+				    <li><a href="#contenido3">Internet de las Cosas</a></li>
+					<li><a href="#contenido4">Ciberseguridad</a></li>
+					
+
+					
+				</ul>
+			</li>
+			<li><a href="#">Electronica</a>
+				<ul>
+					<li><a href="#contenido5">Drones</a></li>
+					<li><a href="#contenido6">Telefonos</a></li>
+					<li><a href="#contenido7">Consolas</a></li>
+				</ul>
+			</li>
+			
+
+			<li><a href="#">Ingeniería de Software</a>
+
+				<ul>
+					<li><a href="#contenido51">Autenticación sin Contraseña</a></li>
+					<li><a href="#contenido52">Asistentes de Voz</a></li>
+					<li><a href="#contenido53">software Outsourcing</a></li>
+					<li><a href="#contenido54">Desarrollo Web</a></li>
+					<li><a href="#contenido55">WebApps</a></li>
+					<li><a href="#contenido56">Inteligencia Artificial</a></li>
+				
+			
+				</ul>
+
+			</li>
+
+
+
+			<li><a href="#">Redes</a>
+				<ul>
+					<li><a href="#contenido11">Tendencias</a></li>
+					<li><a href="#contenido12">Seguridad</a></li>
+					
+				</ul>
+			</li>
+			<li><a href="#">hardware</a>
+				<ul>
+					<li><a href="#contenido31">Informacíon</a></li>
+				</ul>
+				
+			</li>
+
+
+			
+		</ul>
+    	</div>
+	    <div class="contenedor">
+		<div class="contenido">
+			<div id="inicio" class="informacion">
+				<h1>Inicio</h1>
+				<img src="imagenes/pantalla.jpg"  alt="" class="centrado">
+			<hr>	
+			</br>
+				<p class="justificado">
+				Las nuevas tecnologías se refieren a todos los nuevos medios que, en los últimos años, han facilitado el flujo de información (internet, el videodisco digital [DVD], los computadores portátiles y todos los aparatos tecnológicos que sirven para producir, desarrollar y llevar a cabo la comunicación). En lo que se refiere a los medios de comunicación, las nuevas tecnologías han posibilitado la existencia de periódicos digitales, de publicidad en Internet, de la emisión de música y videos sin necesidad de aparatos de radio o equipos de sonido, así como de la comunicación instantánea entre personas de diversos países con un costo económico mucho menor que el que implican los servicios telefónicos convencionales. Un efecto notable que han tenido las nuevas tecnologías en el ámbito de los medios de comunicación ha sido el de hacer que el uso los medios manuscritos de comunicación (es decir, las cartas y mensajes que se enviaban de un lado a otro por medio del servicio postal) haya menguado enormemente.
+
+
+			    </br>
+			    </br>		
+			    </br>
+			    </br>
+			    </br>
+			    </br>
+
+			    <p>Cita</p>
+
+			    <cite style="color: black">https://enciclopedia.banrepcultural.org/index.php/Las_nuevas_tecnolog%C3%ADas_de_la_comunicaci%C3%B3n#:~</br>:text=Las%20nuevas%20tecnolog%C3%ADas%20se%20refieren,llevar%20a%20cabo%20la%20comunicaci%C3%B3n). 
+
+			    </br>
+			    </br>
+
+			    	 banrepcultural
+
+			    </cite>
+			    </br>
+			   
+
+
+				</p>
+			</div>
+			<div id="contenido2" class="informacion">
+				<h1>TECNOLOGÍA 5G</h1>
+			
+				<p>
+					<b>5G comienza su expansión</b>
+					</br>
+                    Ya no será un sueño, el próximo año se convertirá en una realidad. La sucesora 4G de la tecnología en telefonía móvil será la 5G, la cual estará disponible para el público en general ¿Qué tipo de ventajas te traerá esto? </br>
+                    Conexión de 20 Gbps, menor latencia y mayor disponibilidad en ancho de banda, son algunos de los grandes beneficios de este avance. Imaginá la gran capacidad y usabilidad que tendrán los smartphones. Todas las posibilidades están a la vuelta de la esquina. 
+                    </br>
+                     </br>
+                    Sin las limitaciones del sistema 4G, podrás desarrollar aplicaciones más robustas. Las funcionalidades van asociadas a la mejoría del video y a la realidad aumentada.
+                    </br>
+                     </br>
+                    Cabe destacar que las llamadas «Ciudades Inteligentes» se apoyarán en el sistema 5G para funcionar. El procesamiento que requieren los sistemas de tráfico, los vehículos sin conductor y los nuevos dispositivos podrá ser más eficiente con dicha tecnología.
+
+                    </br>
+                     </br>
+                      </br>
+                       </br>
+
+
+
+
+				Sí, es verdad, ¡nos repetimos! Se ha hablado, se habla y se hablará de 5G en muchos foros, pero la realidad es que 2020 es el año del cambio. La tecnología existe, pero no está accesible de forma aplia como servicio en el mercado para los usuarios, y eso es lo que va a ocurrir en este año próximo: las operadoras estarán en condiciones de ofrecer redes 5G y todos sus avances, proporcionando
+			    </br>
+			    </br>
+
+			    <ul>
+			    	<li>• Mayor ancho de banda.</li>
+			    	 </br>
+			    	<li>• Más densidad de usuarios.</li>
+			    	 </br>
+			    	<li>• Baja latencia y confiabilidad.</li>
+			    	 </br>
+			    	
+			    </ul>
+			    </br>
+			      <img src="imagenes/img2.jpg"  alt="" class="centrado"> <cite>rtve</cite>
+                   
+
+
+
+                     </br>
+                     </br>
+
+
+			    	 Si hablamos de España, vemos que Vodafone ya tiene red desplegada, Telefónica tiene interés en hacerlo en modo NSA para 2020 y Orange ha decidido comenzar en SA para el 2021.
+			    </br>
+                     5G es mucho más que sólo ancho de banda, ya que permitirá el desarrollo de servicios adicionales pensando en miles de millones de dispositivos interconectados que comparten o envían información a centros de control para la toma de decisiones. Empresas, gobiernos y clientes tienen la oportunidad de disfrutar de las ventajas de una conexión plena y es necesaria una cooperación entre instituciones para favorecer ese avance. Como como en el caso de la UE, para tener cobertura 5G ininterrumpida en 2025 para ferrocarriles y carreteras principales.
+                      </br>
+                       </br>
+                        </br>
+					     </br>
+
+					 <p>Cita</p>
+                     <cite>https://www.teldat.com/blog/es/tendencias-telecomunicaciones-2020/</cite>
+
+
+
+
+
+
+
+
+              
+                </p>
+			</div>
+			<div id="galeria" class="informacion">
+				<h1>WIFI 6</h1>
+				<p>
+					Los principales fabricantes ya han introducido Wifi 6, u 802.11ax, en sus líneas de producto. Pero la Wifi-Alliance ha abierto por fin su programa de certificaciones oficiales y por tanto en 2020 es de esperar un despliegue formal y extensivo por parte de más proveedores.
+				</br>
+				</br>
+                    5G y Wifi 6 son tecnologías completamente diferentes que podrían competir en muchos escenarios sin cable, ofreciendo altas velocidades. Pero en realidad, si trabajan en conjunto son la combinación perfecta de conectividad extremo a extremo para la oficina y el hogar.
+                </br>
+                </br>
+                    Wifi 6, al igual que 5G vs 4G, no solo implica un aumento de velocidad teórica en la transmisión de datos; además soluciona ciertos problemas de las redes anteriores, como la densidad de terminales conectados y el bajo rendimiento de la red a medida que aumenta esa densidad.
+                </br>
+                </br>
+                    Se espera que el incremento de dispositivos en redes Wifi continúe a un ritmo muy elevado. Y no solo eso, sino que el volumen de datos consumidos y capacidades de inteligencia de red también deben crecer para atender la demanda de servicios y calidad de los usuarios finales.
+
+					 </br>
+					</br>
+					<img src="imagenes/img1.jpg"  alt="" class="centrado"><cite>computerworldmexico</cite>
+                    
+				</p>
+				 </br>
+					</br>
+					  </br>
+					   </br>
+				 <p>Cita</p>
+                     <cite>https://www.teldat.com/blog/es/tendencias-telecomunicaciones-2020/</cite>
+
+			</div>
+
+
+			<div id="galeria1" class="informacion">
+				 <h2>BIG DATA</h2>
+
+				 <p>
+				 	<b>El sector retail y los grandes datos:</b> 
+				    </br>
+				    	 </br>
+                    Big data es sinónimo de oportunidad. En el área de las Telecomunicaciones, avanzar de la mano de los grandes datos implica poder experimentar una nueva forma de hacer negocios que se apoya en:
+                    	 </br>
+                    	 	 </br>
+                    	 	
+                    •	Optimización de rutas y aumento de la calidad del servicio mediante el análisis en tiempo real del tráfico de red.
+                    	
+                    	    </br> 
+                    	  </br>
+                    	   
+
+                    •	Análisis en tiempo real aplicado a los registros de datos de llamadas, que permite identificar conductas fraudulentas en el momento de producirse.
+                    	 
+                    	    </br> 
+                    	  </br>
+                    	   
+
+                    •	Posibilidad de personalizar y reconfigurar los planes de llamadas en cualquier momento, ganando en flexibilidad y rentabilidad, con solo contactar con la centralita de atención al cliente.
+                    	
+                    	    </br> 
+                    	  </br>
+                    	   
+
+
+                    •	Creación de campañas de marketing totalmente personalizadas para cada cliente individual, en función de criterios geográficos y tecnologías basadas en redes sociales.
+                    	  
+                    	    </br> 
+                    	  </br>
+                    	   
+
+                    •	Utilización del conocimiento sobre el comportamiento del cliente y su hábitos de uso para el desarrollo de nuevos productos y servicios.
+                    	 
+                    	    </br> 
+                    	     </br>
+                    	      </br>
+                    	       </br> 
+                    	       
+                    Big data puede incluso abrir nuevas fuentes de ingresos, como la venta de información acerca de los clientes a terceros, una de las formas más extendidas de monetización de los grandes datos, que permite aprovechar todo ese conocimiento que se conserva en forma de datos, que no dejan de aumentar y pueden resultar de gran utilidad para otros sectores y otros negocios.
+                    	  </br> 
+                    	 
+                    En este terreno, las empresas de telecomunicaciones son unas grandes privilegiadas porque disponen de un volumen impresionante de información acerca de cada cliente, con el que pueden comerciar.
+                    	  </br> 
+                    	  </br>
+                    	   </br>
+                    	 	 
+                   <b> ¿Realmente se pueden usar todos los datos?</b>
+                    	  </br> 
+                    	  
+                    	  
+                    La respuesta es sí. Big data implica que cualquier empresa del sector de las telecomunicaciones puede beneficiarse de todos y cada uno de sus datos. En este grupo no sólo se incluyen los datos de que dispone internamente como, por ejemplo, los archivos históricos, sino también todos los que proceden del exterior de la organización. Hablamos de:
+                    	
+                    	  </br> 
+                    	  </br>
+                    	   
+                    	 	
+                    <b>Datos Internos:</b> Desde los registros de llamadas hasta el número de mensajes de texto o multimedia enviados por cada usuario. Por supuesto, también es útil toda la información acerca de los dispositivos de que dispone cada cliente, el ratio de respuesta a las campañas de marketing, los datos de contrato, las veces que se ha recurrido al servicio de soporte al cliente, el histórico de tarificación o la duración promedio de cada llamada realizada por un individuo.
+                    	 </br>
+                    	 	 </br>
+                    	 	 	 </br>
+                    <b>Datos externos:</b> Datos procedentes de las redes sociales, foros y webs especializadas, blogs y páginas de opinión y, por supuesto, toda la información que procede de los centros estadísticos, encuestas públicas, investigaciones y análisis practicados por entidades acreditadas, entre otros. 
+                    	 </br>
+                    	 	 </br>
+                    	 	 
+                    	 	 
+                    	
+                    	  
+                    Los primeros proceden en su mayoría de marketing, ventas, desarrollo de producto, facturación y contabilidad y las infraestructuras internas; mientras que los segundos, se obtienen de la interacción con internet, la prensa escrita, publicaciones y boletines oficiales o fuentes de carácter público a nivel estatal o supranacional.
+                    	 </br>
+                    	  </br> 
+                    	   </br>
+                    	
+                    La ética y las restricciones de privacidad son los únicos límites al aprovechamiento de la información que se genera sin parar. Los valores que cada compañía presente influirán en su forma de abordar la recogida de datos y su procesamiento posterior. La manera de actuar de cada empresa, en este sentido, configurará su imagen pública, por lo que cada acción debe estar perfectamente calculada. Al mismo tiempo, la imposibilidad de vulnerar accesos sin autorización, entrando a lugares del ámbito de la privacidad individual, no sólo no es ético, sino que puede ser penado; por lo que se trata de conductas a evitar.
+
+				 	
+
+				 </p>
+				 	 </br>
+				 	 	 </br>
+				 	 	 <img src="imagenes/img29.jpg"  alt="" class="centrado"><cite>https://bbvaopen4u.com/</cite>
+
+
+
+				 	 	  </br>
+				 	 	    </br>
+				 	 	     </br>
+				 	 	       </br>
+				 	 	        </br>
+				 	 	         </br>
+				 	 	         <p>Cita</p>
+				 	 	         <cite>http://cdn2.hubspot.net/hub/239039/file-1959511423-pdf/docs/%5BIC%5D_OFFER_-_EBOOK-_Big_data_y_sector_telecomunicacionesv2.pdf</cite>
+
+
+                 
+                
+                   
+
+
+
+
+
+             </div>
+
+
+			
+
+			<div id="contenido3" class="informacion">
+				<h1>INTERNET DE LAS COSAS</h1>
+			</br>
+
+			<p>
+				La expansión de las nuevas tecnologías de conectividad mencionadas permitirá que muchos dispositivos cotidianos estén conectados entre sí y a Internet en 2020. Muchos de esos equipos ya existen, pero funcionan de forma autónoma y con poca inteligencia.
+			    </br>
+			    </br>
+                IoT va a permitir un mayor intercambio de información, monitorización de estaciones base, captación de datos de medida, control remoto y automatización en la toma de decisiones.
+                 </br>
+                También podrá IoT utilizar tecnologías de comunicaciones como BLE, 5G o Wifi 6, pero IoT no solo implica a tecnologías de conectividad, sino que además es una oportunidad excelente para crear nuevos servicios por parte de la industria y otros sectores del mercado.
+                </br>
+                </br>
+                Como resultado del IoT, cada vez hay más dispositivos en la red y, por tanto, más violaciones potenciales de seguridad. Es necesario que los gestores de esos nuevos servicios y los proveedores de la tecnología planifiquen cómo proteger la privacidad de los datos, la defensa ante ataques y sobretodo la confiabilidad. De lo contrario, será muy difícil que el usuario final acceda a contratar los nuevos servicios del mercado.
+				
+
+
+			</p>
+			
+				</br>
+			     </br>
+				 <img src="imagenes/img27.webp"  alt="" class="centrado"><cite>https://hipertextual.com/</cite>
+
+				 </br>
+				  </br>
+
+
+				
+
+				
+		
+				
+
+				<cite>
+                      https://www.teldat.com/blog/es/tendencias-telecomunicaciones-2020/
+                </cite>
+
+
+
+				
+			</div>
+
+			<div id="contenido4" class="informacion">
+				<h1>CIBERSEGURIDAD</h1>
+
+				</br>
+
+				<p>
+					En términos generales, el concepto de privacidad digital hace referencia al control que un usuario de Internet puede ejercer sobre sus datos, limitando el acceso a su información privada por parte de personas o instituciones. Tan importante es la privacidad para el éxito de servicios en redes públicas que la Unión Europea cambió, en 2019, los requisitos de protección de datos para toda su zona (RGPD).
+				    </br>
+				     </br>
+				   
+                    Para 2020, la ciberseguridad en un mundo cada vez más interconectado será crítica. Tanto las empresas como los particulares están expuestos a una gran cantidad de peligros que pueden causar daños considerables, no solo en la protección de datos, sino también en la disponibilidad de los servicios contratados. Durante el próximo año las soluciones de protección serán parte imprescindible de los nuevos servicios ofrecidos por los proveedores.
+                    </br>
+                     </br>
+                    Además, será necesario incorporar soluciones que favorezcan la resiliencia de la empresa frente a las vulnerabilidades y gestionar así el riesgo existente y, dado el caso, superarlo con un mínimo impacto para la organización.
+                     </br>
+                      </br>
+                       </br>
+                    <b>Conclusión</b>
+
+                     </br>
+                      </br>
+                    Las mencionadas tendencias en telecomunicaciones para 2020 presentan interesantes escenarios para compañías como Teldat. Las oportunidades que ofrecen, nos van a ayudar a convertirnos en clave a nivel de software y desarrollo de producto.
+
+					
+
+				</p>
+			</br>
+			  <img src="imagenes/img3.jpg"  alt="" class="centrado"><cite>https://www.tynmagazine.com/cuales-son-las-amenazas-en-ciberseguridad-que-se-esperan-para-el-2020/</cite>
+			 </br>
+			  </br>
+
+			  <p>cita<p>
+
+			 <cite>https://www.teldat.com/blog/es/tendencias-telecomunicaciones-2020/</cite>
+
+            
+            </br>
+		    <hr/>
+
+		</br>
+			</br>
+				</br>
+					</br>
+
+
+
+
+
+
+		    <h2> Blockchain: tecnología en cadena de bloques</h2>
+
+		    	</br>
+		    		</br>
+
+		    		<p>
+		    			El crecimiento del blockchain aplicado a las telecomunicaciones viene impulsado por la simplicidad que aporta en los procesos de negocio. Este método garantiza la seguridad y veracidad en las operaciones entre distintas empresas, aplicando la tecnología de cadenas de bloques.
+		    		</br>
+		    		 </br>
+                        En el sector de las telecomunicaciones, Telefónica e IBM han firmado un acuerdo mediante el cual Telefónica podrá realizar seguimientos en tiempo real de cada comunicación, obteniendo información como la duración, el origen de la llamada o el destino. Este acuerdo agiliza aspectos como la facturación o contabilidad de las líneas y sirve de ayuda para detectar posibles fraudes.
+                        </br>
+                         </br>
+                        Huawei también se ha sumado a la tecnología Blockchain, lanzando recientemente Huawei cloud, con el fin de garantizar la transacción segura de datos entre los participantes de una transacción.
+                        </br>
+                        Cada vez son más las empresas que quieren incluir las aplicaciones de cadenas de bloques en sus servicios, pero la implementación de esta tecnología requiere cierto grado de conocimiento y unos objetivos muy claros antes de llevarse a cabo.
+                        </br>
+                        Aplicar estas tecnologías en tu empresa, puede ayudarte a tener un mayor control sobre tus activos y ahorrar costes en tus telecomunicaciones. En Unique, utilizamos la tecnología para obtener información útil sobre el consumo de tus líneas y te ayudamos a tomar la mejor decisión de ahorro sin costes añadidos. Ahorra usando la tecnología, contáctanos.
+
+
+		    		</p>
+
+		    		</br>
+		    		 </br>
+		    		  <img src="imagenes/img5.jpg"  alt="" class="centrado"><cite>https://www.bloglenovo.es/que-es-un-blockchain/</cite>
+		    		  </br>
+		    		   </br>
+
+		    		   <p>Cita</p>
+
+		    		 <cite>https://esunique.com/tendencias-en-telecomunicaciones-2019/</cite>
+
+
+
+           
+			</div>
+
+
+
+
+			
+
+
+
+			<div id="contenido5" class="informacion">
+				<h1>Drones</h1>
+				</br>
+            
+                <p>
+                	 <b>DJI Phantom 3 Pro.</b> – Mejores vídeos e imágenes en un dron
+                	  </br>
+                     El DJI Phantom 3 Pro es de los mejores drones de gama alta del mercado. Graba vídeos 4k de hasta 30 fotogramas por segundo y fotos de 12 megapíxeles con un resultado más nítido y limpio que nunca. También tiene función de streaming Lightbridge que permite ver la acción en vivo en 720P mientras que la versión full HD se guarda en la tarjeta SD. Eso sí, al tener unas características muy potentes es caro, está por encima de los 1.000 euros.
+                      </br>
+                       <img src="imagenes/img6.jpg"  alt="" class="centrado"><cite>turbosquid.com/es/3d-models/dji-phantom-3-professional-3d-3ds/1077175</cite>
+                       
+                          <p>Cita</p>
+                         <cite>https://viajerofacil.com/mejores-drones/</cite>
+
+                          </br>
+                           </br>
+                            </br>
+                             </br>
+                               </br>
+                                </br>
+                                 </br>
+                                  </br>
+
+
+                     <b>DJI Mavic Pro Drone.</b> – Mejor dron de gama alta
+                      </br>
+                     Al igual que el anterior, el DJI Mavic 2 Pro Drone es de los mejores drones en calidad- precio del mercado, pero son de una gama más cara, también por encima de los 1.000 euros. El precio se justifica por la gama superior de fotografía aérea. Es un dron pensado para profesionales y experimentados entusiastas de los drones.
+
+                 </br>
+                 
+                  </br>
+
+                 Entre las ventajas se encuentran su potencia y posibilidad de elegir entre un objetivo de zoom óptico de 2 aumentos totalmente integrado y un objetivo Pro desarrollado por Hasselblad. El sistema de cámara del Mavic 2 Pro Drone tiene una apertura de 2,8 y una velocidad de obturación de 1/800 para reducir el desenfoque por movimiento. El zoom de alta calidad o el objetivo óptico reproducen imágenes más claras que ninguna, y tiene una opción de enfoque manual.
+                  </br>
+                   <img src="imagenes/img7.webp"  alt="" class="centrado"><cite>cnet.com/es/noticias/dji-mavic-pro-2-especificaciones-filtracion/</cite>
+              
+                      <p>Cita</p>
+                      <cite>https://viajerofacil.com/mejores-drones/</cite>
+
+
+                       </br>
+                         </br>
+                          </br>
+                           </br>
+                            </br>
+                             </br>
+
+
+
+                     </br>
+                   </br>
+
+                 <b>DJI Spark Mini.</b> – Mejor modo de vuelo de gama media
+                  </br>
+
+                   </br>
+
+                 El Mini Drone de DJI Spark es ideal para viajar debido a su tamaño. Tiene un diseño muy guapo y lo puedes adquirir en varios colores. La cámara toma fotos y vídeos de altísima calidad, y ofrece la última tecnología DJI, como el Modo de Vuelo Inteligente, control de velocidad y precisión. En el modo TapFly, puedes controlar su vuelo desde la pantalla del teléfono.
+                  </br>
+                   </br>
+                 Su precio es de gama media, entorno a los 600 euros, y es de los mejores de su gama sin duda. El cardán de 2 ejes reduce las ráfagas de aire y el balanceo, y su cámara cuenta con una lente de 2,6 pulgadas de ancho y una distancia focal de 25 mm. La ingeniería aerodinámica y ligera acelera el avión teledirigido a través del viento y la intemperie. Tiene un precio muy asequible para todo lo que ofrece, una fantástica relación calidad-precio.
+
+             </br>
+         </br>
+          <img src="imagenes/img8.jpg"  alt="" class="centrado"><cite>loff.it/conectar/gadgets/dji-spark-primer-mini-dron-no-profesionales-282789/</cite>
+
+
+     
+
+           <p>Cita</p>
+           <cite>https://viajerofacil.com/mejores-drones/</cite>
+
+
+
+                </p>
+                	
+
+                	
+                
+
+
+				
+			</div>
+
+
+			<div id="contenido6" class="informacion">
+				<h1>Telefono</h1>
+
+			</br>
+
+				<p>
+					<b>Samsung Galaxy S20 Fan Edition</b>
+				    </br>
+                    Han circulado rumores de una Fan Edition del S20, lo que sugiere que Samsung ofrecerá una versión más asequible de su teléfono Galaxy S20. Se dice que funciona con Qualcomm Snapdragon 865 y tiene una pantalla de 120Hz, pero a un precio más agradable.
+                    </br>
+                     <img src="imagenes/img10.jpg"  alt="" class="centrado"><cite>https://www.samsung.com/co/smartphones/galaxy-s20/</cite>
+                     </br>
+
+                    <b>Nokia 7.3 5G</b>
+                     </br>
+                    Nokia está buscando agregar otro teléfono 5G asequible a su selección y se rumorea que este teléfono se usará con el nuevo hardware Qualcomm Snapdragon 690 5G o MediaTek Dimensity. Nokia ha confirmado que está trabajando en un dispositivo 5G más asequible y que habrá dispositivos en este nuevo hardware de Qualcomm en el futuro. Esperamos actualizaciones de Nokia en septiembre de 2020.
+
+                     <img src="imagenes/img9.jpg"  alt="" class="centrado"><cite>https://www.phonearena.com/news/nokia-7-3-5g-leak-james-bond-set_id126637</cite>
+
+
+                     </br>
+                      </br>
+
+                    <b>>Nokia 9.3 PureView</b>
+                     </br>
+                       
+                    La palabra en la calle es que Nokia quiere actualizar el Nokia 9, pero para conseguirlo en Snapdragon 865 se está retrasando hasta finales de 2020, probablemente en septiembre. Probablemente se deba al trabajo necesario para que el sistema de cámara funcione en el nuevo hardware. ¿Dónde estaba el Nokia 9.1 y 9.2? Se rumorea que nunca apareció una versión de Snapdragon 855, lo que podría explicar la omisión del número 9.1, y otros modelos para 2020 moviéndose a x.3, sospechamos que el Nokia 9 también lo haría.
+                     </br>
+                      </br>
+                       <img src="imagenes/img21.jpg"  alt="" class="centrado"><cite>https://elrincondechina.com/</cite>
+                        </br>
+                         </br>
+
+                    <b>Samsung Galaxy Z Fold 2</b>
+                     </br>
+                    Anunciado en Galaxy Unpacked el 5 de agosto, no sabremos todo sobre el nuevo Galaxy Z Fold 2 hasta el 1 de septiembre, cuando salga oficialmente a la venta. Lo que sí sabemos es que tiene un diseño mejorado, una pantalla plegable de 7,6 pulgadas con cristal ultrafino y una pantalla externa mucho más grande de 6,2 pulgadas.
+                     </br>
+                      </br>
+                       <img src="imagenes/img22.jpg"  alt="" class="centrado"><cite>https://www.infobae.com/</cite>
+
+                       </br>
+                        </br>
+                         </br>
+
+
+
+                    <b>Google Pixel 5</b>
+                     </br>                                    
+                    Google ha confirmado que lanzará el 5G Pixel 5 más adelante en el año. Pero fuera de eso, el próximo teléfono de Google ya ha visto algunas filtraciones interesantes. Existe la sugerencia de que usará el Snapdragon 765 para hacerlo más asequible y podría deshacerse de la tecnología de radar Soli, que tenía una funcionalidad limitada. No esperaríamos verlos hasta octubre de 2020.
+                     </br>
+                      </br>
+                        <img src="imagenes/img23.jpg"  alt="" class="centrado"><cite>https://www.tomsguide.com/</cite>
+                         </br>
+                          </br>
+
+
+                    <b>Apple iPhone SE Plus</b>
+                     </br>                  
+                    Tan pronto como se anunció el iPhone SE 2020, comenzaron a circular rumores sobre un modelo más grande. Con el iPhone SE esencialmente tomando el cuerpo del iPhone 8, hay quienes se preguntan si se lanzará un modelo Plus para encajar en el espacio del iPhone 8 Plus. Si bien muchos dicen que es poco probable que aparezca este teléfono (el diseño de 4 años y el precio más alto que el SE lo hacen cercano al XR), hay quienes dicen que aparecerá a principios de 2021.
+                     </br>
+                      </br>
+                       <img src="imagenes/img24.jpg"  alt="" class="centrado"><cite>https://lamanzanamordida.net/</cite>
+                       </br>
+                        </br>
+
+                    <b>Huawei Mate 40 y Mate 40 Pro</b>
+                     </br>
+                   
+                    Se espera que Huawei actualice sus dispositivos Mate en octubre de 2020 con Mate 40 y Mate 40 Pro. No hemos visto una gran cantidad de fugas para estos teléfonos, pero las fugas de diseño sugieren un gran círculo de cámara en la parte trasera, el Mate 40 Pro tiene una lente de periscopio además de la oferta del Mate 40. Las cámaras frontales dobles se colocan en un agujero perforado en la pantalla curva.
+
+				</p>
+
+				 <img src="imagenes/img11.jpg"  alt="" class="centrado"><cite>https://pricepony.com/huawei-mate-40-pro-prime-specs/</cite>
+
+
+
+			</br>
+			 </br>
+			  </br>
+
+			  <p>Cita</p>
+
+				<cite>https://www.pocket-lint.com/es-es/smartphones/guias-del-comprador/120810-proximos-smartphones-y-moviles-nuevos-que-saldran-este-ano</cite>
+
+				
+			</div>
+
+			<div id="contenido7" class="informacion">
+				<h1>CONSOLAS</h1>
+			</br>
+				</br>
+
+				<P>
+					<b>PlayStation 5</b>	
+						</br>
+				     La nueva generación de consolas está a punto de llegar al mercado. Por ello, los gamers están impacientes por comenzar a jugar los títulos más recientes y más potentes del mundo de los videojuegos. El pasado 11 de junio, el PlayStation 5 fue presentado. Su diseño e innovación tecnológica generó gran expectativa a los fanáticos, sin embargo, la fecha de lanzamiento no fue anunciada, tampoco el precio.
+				     </br>
+
+
+				   		
+                     Recientes rumores señalan un día exacto en que la máquina de Sony saldrá a la venta: 13 de noviembre. En caso de ser cierto, el PS5 saldría solo una semana después que su máximo competidor, el Xbox Series X (6 de noviembre). Todo esto, a falta de una confirmación oficial.
+
+				</P>
+					</br>
+					<img src="imagenes/img12.webp"  alt="" class="centrado"><cite>https://www.cnet.com/</cite>
+						</br>
+						 </br>
+						  </br>
+
+
+				<p>
+					<b>Xbox Serie X: Project Scarlett</b>
+				</br>
+                    Durante el mes de marzo Microsoft ha desnudado a su consola de próxima generación, Xbox Series X, dejando a la vista sus componentes de hardware, pero también detallando para qué se usarán. La consola estrena funcionalidades para hacer la vida más fácil a los jugadores, y traerá consigo los servicios heredados de Xbox One. En este artículo desgranamos todo lo que se conoce de la máquina, de su mando y otros tantos detalles.
+
+                    </br>
+                    <img src="imagenes/img13.webp"  alt="" class="centrado"><cite>https://news.xbox.com/</cite>
+			          </br>
+			           </br>
+						 </br>
+						  </br>
+
+
+			         <b>Atari VCS:</b> 
+                    Es una de las más esperadas entre las Nuevas videoconsolas del 2020. Se trata de una versión totalmente renovada del famoso Atari tradicional, en el que se combinan los juegos, la transmisión y una conexión única.
+                    	</br>
+
+                    El Atari VCS tiene una excelente combinación entre consolas y PC, para satisfacer las necesidades e intereses de los creadores y jugadores, considerándose una videoconsola de octava generación.
+                    	</br>
+                    		</br>
+                    		 <img src="imagenes/img14.jpg"  alt="" class="centrado"><cite>https://www.xataka.com</cite>
+                    			</br>
+                    			 </br>
+						           </br>
+						             </br>
+
+
+                    <b>PlayDate:</b>
+                    	</br> 
+                    Si te preguntas Qué consolas nuevas están disponibles en 2020, déjanos recomendarte la PlayDate, una de las más recientes y mejores opciones para este año.
+                    	</br>
+                    Se trata de una pequeña consola portátil, con una hermosa pantalla en blanco y negro al mejor estilo retro, con un tamaño ideal para llevarla en tu bolsillo,  cuenta con una manivela y es de color amarillo.
+                    	</br>
+                    	 <img src="imagenes/img25.jpg"  alt="" class="centrado"><cite>https://www.vidaextra.com/</cite>
+                    		</br>
+                    		 </br>
+						      </br>
+                    <b>Stadia de Google:</b>
+                    	</br>
+                    		</br>
+                    Es una de las Nuevas Videoconsolas 2020, aunque aún no ha llegado a todos los países.
+                    	</br>
+                    Esta increíble videoconsola contará con el acceso a una plataforma de juegos en streaming, una opción realmente innovadora.
+                    	</br>
+                    La Stadia de Google, te permite jugar donde y cuando quieras, desde tu dispositivo favorito. Además ofrece una imagen de 4K y 60 fps, también un sonido envolvente 5.1 para mejorar la experiencia al máximo.
+
+				</p>
+
+				 <img src="imagenes/img26.jpg"  alt="" class="centrado"><cite>https://www.xataka.com/</cite>
+
+			</br>
+			 </br>
+		      </br>
+		      
+
+				</br>
+			     </br>
+		          </br>
+		          </br>
+			     </br>
+		          </br>
+		           </br>
+		          </br>
+		          </br>
+			     </br>
+		          </br>
+
+		          <p>Cita</p>
+
+		          <cite>https://www.marca.com/claro-mx/esports/2020/08/30/5f4c0b52e2704e55208b45db.html</cite>
+		          	</br>
+		          	<cite>https://vandal.elespanol.com/reportaje/xbox-series-x-fecha-de-lanzamiento-precio-especificaciones-juegos-y-todo-lo-que-sabemos</cite>
+		          		</br>
+		          		<cite>https://www.tecvideostv.com/las-nuevas-videoconsolas-2020-y-sus-caracteristicas/</cite>
+
+				
+
+			</div>
+
+
+
+
+			
+
+			<div id="contenido51" class="informacion">
+				<h1>AUTENTICACÍON SIN CONTRASEÑA</h1>
+
+				<P>
+					Las contraseñas se volvieron inseguras por la falta de estrategia de los mismos usuarios. Para los delincuentes cibernéticos cada vez es más sencillo descifrar contraseñas frágiles. Por ello Así la ingeniería de software facilita las cosas para este 2020 con métodos más simples para las personas.
+				    </br>
+                    En términos de autenticación podrás utilizar validaciones biométricas. Entre estas, podés implementar tus huellas dactilares, un reconocimiento facial o del iris para desbloquear diversos dispositivos.
+                    </br>
+                    Marcas idóneas para que comience la aplicación de este tipo de tecnología la encuentrás en Apple con iOS y Google con Android.
+
+
+
+				</P>
+
+			</br>
+				
+
+									
+
+
+				<cite>https://www.gylgroup.com/novedades/tendencias-ingenieria-software-2020</cite>
+
+			</br>
+			 </br>
+			  </br>
+
+
+				<p>
+					Puesto que resulta fácil acceder a las contraseñas o interceptarlas, las organizaciones han estado buscando otros métodos de autenticación que las sustituyan. Entre los distintos ejemplos de autenticación sin contraseña, se incluyen los siguientes:
+					</br>
+			  </br>
+
+                    <b>Correo electrónico:</b> se verifica al usuario mediante un "magic link" (o en algunos casos un código de un solo uso). Un "magic link" o enlace mágico es cuando se crea código exclusivo para el usuario y se le envía por correo electrónico. El usuario accede a su correo y hace clic en el enlace y, en ese momento, el servicio al que están intentando acceder identifica el código y lo cambia por un código activo, y les da acceso.
+                    </br>
+			  </br>
+                    <b>SMS:</b> se envía al usuario un "one-time passcode" o código de un solo uso mediante un SMS a su número de teléfono. Luego el usuario introduce el código y obtiene el acceso. 
+                    </br>
+			  </br>
+                   <b> Autenticación multifactor:</b> se trata de una combinación de factores que el usuario proporciona, como los PIN, las preguntas de seguridad o la información de contacto.
+                   </br>
+			  </br>
+                    <b>Biometría:</b> puede ser desde el escaneo de la huella dactilar o el reconocimiento facial para establecer que un usuario es quien dice ser, hasta la biometría del comportamiento.
+ 
+
+
+
+				</p>
+
+				 </br>
+			
+
+			     <cite>https://www.buguroo.com/</cite>
+
+			       </br>
+			        </br>
+			         </br>
+			           </br>
+			             </br>
+			               </br>
+			               <img src="imagenes/img28.jpg"  alt="" class="centrado"><cite>https://www.serban.es/</cite>
+
+
+
+				
+
+				
+			</div>
+
+
+
+
+				<div id="contenido52" class="informacion">
+			<h1>ASISTENTE DE VOZ</h1>
+
+			<p>
+				Los asistentes inteligentes como Google, Siri y Alexa están presentes desde hace aproximadamente 5 años. La ingeniería de software va a perfeccionar estos sistemas para integrar servicios y habilidades nuevas.
+			</br>
+			</br>
+                La inteligencia artificial, tema que desarrollaremos más adelante, y el aprendizaje profundo, son dos factores que le dan forma a los asistentes de voz. Los mismos permitirán que esta tecnología se apoye en redes neuronales, por ejemplo.
+
+
+			</p>
+			</br>
+			 </br>
+			  </br>
+			   </br>
+			    <img src="imagenes/img15.jpg"  alt="" class="centrado"><cite>https://www.nobbot.com/futuro/asistentes-virtuales-2019/</cite>
+			     </br>
+			      </br>
+			       </br>
+			        </br>
+			         </br>
+			        
+
+
+			    <p>Cita</p>
+
+
+			    <cite>https://www.gylgroup.com/novedades/tendencias-ingenieria-software-2020</cite>
+				
+			</div>
+
+			<div id="contenido53" class="informacion">
+				<h1>CRECIMIENTO DE SOFTWARE OUTSOURCING</h1>
+
+
+				<p>
+					<b>¿Qué es Outsourcing?</b>
+				</br>
+                    Este es el proceso mediante el cual una compañía y/o organización identifica un proceso dentro de su rutina que podría aumentar la productividad y derivar en optimización, involucrando a terceros que son subcontratados para ejecutar esa tarea o actividad.
+                    </br>
+                     </br>
+
+                    En otras palabras, consiste en delegar algunas funciones a una empresa o equipo especializado en ellas, para aumentar la producción, acceder a mejores tecnologías o abaratar los costos dentro de la organización.
+                    </br>
+                     </br>
+
+                    Las tareas van desde mantenimiento de las instalaciones hasta procesos complejos y meticulosos como la contabilidad o el reclutamiento de talentos.
+
+				</p>
+
+				 </br>
+
+				 <cite>https://rockcontent.com/</cite>
+				  </br>
+				   </br>
+
+				    </br>
+
+				
+				       
+
+
+
+
+
+
+
+
+
+
+				<p>
+					Hay estudios que indican que para el 2020 la experiencia del cliente usando la marca superará al precio y al producto como tal. La empresa del software tiene esto muy claro. 
+					</br>
+			</br>
+                    El campo del desarrollo de software outsourcing lo tiene muy claro y ya está trabajando para satisfacer a los clientes. De hecho existen equipos que se especializan en la experiencia del usuario y al diseño del servicio.
+
+
+					
+				</p>
+				</br>
+				
+							
+
+				<cite>https://www.gylgroup.com/novedades/tendencias-ingenieria-software-2020</cite>
+
+
+			</div>
+
+
+
+			<div id="contenido54" class="informacion">
+
+				<h1>DESARROLLO WEB</h1>
+				<p>
+					La proliferación de los sitios web y del desarrollo de contenido para publicitar productos están en auge. Cabe destacar que WordPress es la plataforma líder como Sistema de Gestión de Contenido.
+							</br>
+			        </br>
+			        No obstante este tipo de plataforma es un sistema CMS complejo que funciona con PHP. Requiere mantenimiento continuo y actualizaciones para gestionar posibles amenazas de seguridad.
+
+					
+				</p>
+
+			</br>
+		     </br>
+
+				 <img src="imagenes/img16.jpg"  alt="" class="centrado"><cite>https://bbvaopen4u.com/es/actualidad/desarrollo%20web</cite>
+
+				 </br>
+		     </br>
+		      </br>
+		     <p>Cita</p>
+
+		     <cite>https://www.gylgroup.com/novedades/tendencias-ingenieria-software-2020</cite>
+
+
+				
+
+			</div>
+			<div id="contenido55" class="informacion">
+
+				<h1>WEB APPS</h1>
+
+				<p>
+					
+					Según Techtimes, portal de noticias sobre avances tecnológicos, para el 2020 pronostican una despedida a los sitios móviles para instalarte en las apps progresivas. Esto consiste en una  aplicación que te permite ingresar a través de un navegador. 
+					</br>
+			         </br>
+                    Este tipo de aplicaciones dentro del navegador es la combinación perfecta entre ambos mundos. Como empresario seguramente ya te diste cuenta que muchas apps no son utilizadas y se pierde su efecto. 
+                    </br>
+			         </br>
+                    Gracias a este recurso, la experiencia del usuario mejora considerablemente en sus sesiones de interacción con tu producto. La lectura y el Engagement aumentan, así que, para el próximo año es esencial que aprovechés este recurso. 
+
+				</p>
+
+				 <img src="imagenes/img17.jpg"  alt="" class="centrado"><cite>https://es.pngtree.com/freepng/social-media-icons_4141438.html</cite>
+
+				    </br>
+			         </br>
+			            </br>
+			             </br>
+			             <cite>https://www.gylgroup.com/novedades/tendencias-ingenieria-software-2020</cite>
+				
+
+			</div>
+
+			<div id="contenido56" class="informacion">
+				<h1>INTELIGENCIA ARTIFICIAL</h1>
+				<p>
+
+
+
+					
+                    El sector de las telecomunicaciones considera la Inteligencia Artificial (IA) como un facilitador de mejoras espectaculares en las tecnologías y servicios de comunicación. Algunas de las formas en las que los operadores están implementado IA para optimizar sus operaciones son para ofrecer un mejor servicio al cliente, para una implementación más inteligente de la red y para la incubación de nuevas empresas que puedan desarrollar servicios más avanzados.
+                    </br>
+                    </br>
+                    </br>
+                    La IA participa cada vez más en diferentes aspectos de las empresas. Es esencial para la optimización y mantenimiento predictivo de las redes de las compañías de telecomunicaciones. Mediante asistentes virtuales y chatbots, la IA permiten mejorar el servicio y la satisfacción de sus clientes. Cada vez aparecen más productos relacionados con IA para la detección de actividades fraudulentas. Y por si fuera poco la IA facilita la toma de decisiones e incluso su ejecución a partir del análisis de los grandes volúmenes de datos que se recopilan todos los días desde múltiples fuentes.
+
+
+                
+                    </br>
+                     </br>
+                      </br>
+                       </br>
+
+                 <img src="imagenes/img4.webp"  alt="" class="centrado"><cite>https://empresas.blogthinkbig.com/robots-con-inteligencia-artificial/</cite>
+                  </br>
+
+                     <p>Cita</p>
+                     <cite>https://www.teldat.com/blog/es/tendencias-telecomunicaciones-2020/</cite>
+
+
+                       </br>
+                        </br>
+                         </br>
+
+                     <hr/>
+
+                      </br>
+                       </br>
+                        </br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					La Inteligencia Artificial avanzó tanto que será clave en el funcionamiento de las industrias. Más que una tendencia de ingeniería de software, la IA es un bastión de la fortaleza tecnológica actual. 
+					</br>
+			         </br>
+                    Desde hace tiempo es posible observar cómo la Inteligencia Artificial funciona mediante chatbots y soluciones analíticas prescriptivas. Cada día, más y más productos manejarán gran cantidad de datos que la IA ayudará a sintetizar.
+                    </br>
+                     </br>
+
+				</p>
+			    </br>
+			      </br>
+			      </br>
+				<h2>2D Y 3D</h2>
+				<p>
+					El fabricante tecnológica Nvidia desarrolló un software para captar imágenes en 2D y luego visualizarlas en 3D como parte de un proyecto que se presentó en el congreso anual Neural Information Processing Systems generando un gran impacto, en conjunto con la Universidad de Toronto y la institución finlandesa Universidad de Aalto.
+					</br>
+                    El tema se percibe como una oportunidad para los amantes de la simulación por computador con campos de acción que van desde mapas de diferenciación en realidad virtual hasta videojuegos y películas inmersivas.
+                    </br>
+                    Según dijo Nvidia en su blog oficial, gracias a modelos de aprendizaje automático, el software imita las capacidades del ojo humano para poder comprender con precisión los datos de una imagen. El sistema es un marco de renderización, llamado DIB-R, que es capaz de imitar un ojo humano y producir visualizaciones 3D.
+                    </br>
+                    En pocas palabras, lo que ocurre es que a pesar de que una persona ve en dos dimensiones, las imágenes que captan las retinas se combinan para percibir la profundidad y generar sensación de tridimensionalidad.
+
+
+				</p>
+
+			</br>
+		     </br>
+		     <p>Cita</p>
+		     <cite>https://www.eltiempo.com/tecnosfera/novedades-tecnologia/inteligencia-artificial-de-nvidia-permite-convertir-imagenes-2d-modelo-3d-442414</cite> </br>
+		     <cite>https://www.gylgroup.com/novedades/tendencias-ingenieria-software-2020</cite>
+
+			</div>
+
+			
+
+
+
+
+
+			<div id="contenido11" class="informacion">
+				<h1>TENDENCIAS</h1>
+				   </br>
+                </br>
+            </br>
+         </br>
+
+				<p>
+					El centro de datos va a seguir evolucionando y la nube y los entornos cloud van a ser los principales responsables en esta futura evolución. Si a eso le sumamos la importancia cada vez mayor de tendencias como el Big Data, IoT, etc. el papel que van a jugar los data centers del futuro, será cada vez mayor. Y es que, los datos son el petróleo del siglo XXI. Es la base del negocio y es la pieza clave de las nuevas tecnologías que se están desarrollando, por eso, creemos que la inversión no solo en centro de datos, si no en general en soluciones o infraestructuras IT seguirá siendo importante, porque de esta manera, las organizaciones pueden garantizar ser competitivas ante un cliente cada vez más exigente e hiperconectado que quiere recibir la información en cualquier momento y en cualquier lugar. Por eso, Rafael Herranz de Lenovo cree que “las prioridades de los centros de datos tienden a centrarse en la fiabilidad, la gestión e integración de los sistemas y la mejora de habilidades del personal. Los aspectos más técnicos, relativos al consumo y suministro de energía, la refrigeración y la capacidad, serán también una prioridad. En este contexto, según IDC los retos del futuro de los data center para poder alinearse no sólo con la creciente demanda de manejo de cargas de datos, sino proveer de seguridad, minimizar la latencia y garantizar eficiencia con el Edge Computing como su principal aliado”.
+
+				</p>
+
+			</br>
+		     </br>
+
+		     <p>
+		     	<b>El centro de datos camina hacia su transformación</b> </br>
+                El centro de datos se encuentra en permanente cambio. La migración hacia la nube hace que los data centers que se encuentran en las instalaciones de las propias empresas hayan reducido su presencia en las mismas pero, sin ellos, la nube y todo lo que ésta conlleva, no sería posible.
+            </br>
+             </br>
+                El modelo tradicional, poco a poco va dejando paso a otras fórmulas de centro de datos. Ya no se ven tantos data centers basados en silos entre otros motivos porque supone unos importantes sobrecostes, una gestión más difícil, una escalabilidad limitada y por supuesto unos consumos de electricidad que las organizaciones no pueden permitirse. Tal y como señala Roberto Moral, Director de Arquitecturas de Cisco, “el data center ya no es un lugar fijo y estático. Existe donde se crean, procesan y utilizan los datos y las aplicaciones: en ubicaciones múltiples, locales o remotas. Esto no significa que el data center desparezca, sino que se está expandiendo”.
+                 </br>
+             </br>
+
+               
+
+                Las empresas de todos los tamaños buscan desarrollar aplicaciones de próxima generación, crear conocimientos procesables a partir de sus datos e impulsar el crecimiento del negocio. Pero, por otro lado, también se están enfrentando a otros problemas como por ejemplo, la falta de conocimientos de TI, la reducción de presupuestos o la falta de flexibilidad para elegir la base tecnológica que mejor se adapte a sus necesidades específicas.
+
+		     </p>
+
+		     <p>Cite</p>
+
+		     <cite>https://revistabyte.es/tema-de-portada-byte-ti/centro-de-datos-transformacion/</cite>
+
+
+				
+			</div>
+
+			<div id="contenido12" class="informacion">
+				<h1>SEGURIDAD</h1>
+
+				<p>
+					Uno de los apartados que más importancia está teniendo entre todas las empresas, sobre todo a raíz de que la mayoría de empleados han tenido que trabajar desde sus casas, es el de la seguridad. La seguridad en el centro de datos cobra una mayor relevancia si cabe. Hay que reseñar que, por otro lado, los ataques son cada vez más sofisticados por lo que las medidas de protección y la inversión en dotar a los centros de datos de las herramientas necesarias de seguridad es más que necesario. Igual que los ciberataques han cambiado, también debe variar la forma en la que se despliegan las medidas de seguridad.
+				    </br>
+                    centro de datos servidores Como afirma Javier Gallego de Dell Technologies, “la seguridad del dato en el data center debe analizarse de una forma diferente a como lo hacíamos hasta ahora. Diferente porque vivimos una realidad distinta. Nuestros datos están diseminados por nubes privadas, nubes públicas, aplicaciones de negocio en modalidad SaaS y cada vez más empleados trabajando en remoto. La aproximación clásica ha sido defender el perímetro, nuestro castillo fortificado por diferentes soluciones clásicas de seguridad. Actualmente el perímetro se desdibuja y deslocaliza, luego las soluciones antiguas no valen para las nuevas amenazas.
+                    </br>
+                     </br>
+                        </br>
+                           </br>
+
+                    <b>La nube es el principal impulsor del cambio que se está produciendo en el centro de datos</b>
+                     </br>
+                    Lo cierto es que las tecnologías de seguridad del dato están en constante evolución, ya que este dato es un elemento fundamental y de gran valor para cualquier tipo de empresa. Las organizaciones cada vez están más concienciadas de la importancia de salvaguardar sus datos con entornos de backup y recuperación, Disaster Recovery, garantía de privacidad y cumplimiento de normativas. Con todo ello Jaime Balaña de NetApp, se pretenden conseguir cuatro logros:
+                     </br>
+                      </br>
+                    <td> 
+                   <li> Evitar la pérdida de datos accidental, protegerse del ransomware, virus u otros ataques maliciosos, o evitar en general que sus datos sufran ningún daño; </li>
+                    </br>
+                     </br>
+                    <li> Protegerse frente a fallos energéticos, cumplir los requisitos más exigentes en cuanto a puntos de recuperación, y aprovechar todo el potencial del cloud para modernizar los entornos de recuperación de desastres; </li>
+                     </br>
+                      </br>
+                    <li> Cumplir con las normativas gubernamentales, gestionar la seguridad de los datos de forma eficiente a lo largo de los distintos niveles de almacenamiento, incluido el cloud híbrido, y cumplir los requisitos de recuperación ante desastres y archivado sin comprometer la seguridad de los datos; </li>
+                     </br>
+                      </br>
+                   <li>  Y bloquear los ficheros de escritura única y lectura múltiple.</li>
+                    </td>
+
+
+
+				</p>
+				 </br>
+				  </br>
+
+			
+              
+                </br>
+				  </br>
+
+				  <b>Redes informáticas de 2020 serán más automatizadas y con seguridad integrada</b>
+
+				  </br>
+				   </br>
+				    </br>
+				  <b>“Para el próximo año se prevé un mayor desarrollo de tecnología para automatización de la infraestructura de red, con seguridad integrada y la aplicación de políticas de negocios dinámicas, dijo a Efe el director de Arquitecturas y Software para Latinoamérica de Cisco, el argentino Mariano O’kon.”</b>
+				   </br>
+				    </br>
+				    <h2>FUTURO DE LAS REDES</h2>
+
+				    <p>
+				    	
+				    	En una encuesta a más de 2000 líderes de IT y estrategas de redes, Cisco concluyo que maximizar el valor de las empresas es la prioridad número uno de IT, lo que demuestra “el deseo de impulsar una mayor innovación y una mejor alineación con la estrategia comercial”.
+				    </br>
+				     </br>
+
+                        La encuesta dada a conocer en el evento concluyo que las organizaciones  están mutando hacia redes basadas en “la intención e invirtiendo en tecnología de inteligencia artificial”.
+                        </br>
+                         </br>
+                        “Los equipos de IT actualmente ejecutan redes complejas de misión vital, que son capaces de cada vez mas de proporcionar datos interesantes. Pero para usar esos datos para mejorar las operaciones, la seguridad o el impacto comercial de la red requieren nuevas herramientas”, señalo el vicepresidente sénior y gerente general de Cisco Networking, Scott Harrell.
+                        </br>
+                         </br>
+                        Añadió que “la inteligencia artificial ayudara a los (equipos de) IT a romper el ciclo de mantener el statu quo. Al adoptar el análisis p redictivo y las operaciones basadas en inteligencia artificial los equipos de IT pasaran a convertirse en un facilitador de la nueva innovación empresarial.”
+
+				    </p>
+
+				    </br>
+				     </br>
+				      </br>
+				       </br>
+
+				       <p>Cita</p>
+				       <cite>https://www.elsiglodetorreon.com.mx/noticia/1636192.redes-informaticas-de-2020-seran-mas-automatizadas-y-con-seguridad-integrada.html  </cite>
+				       </br>
+				       <cite>https://revistabyte.es/tema-de-portada-byte-ti/centro-de-datos-transformacion/</cite>
+
+				
+			</div>
+
+
+
+			
+			
+
+			<div id="contenido31" class="informacion">
+				<h1>HARDWARE</h1>
+
+				 </br>
+				  </br>
+
+				<p>
+					<h2><b>TeamGroup lanza la unidad SSD QX con memorias QLC</b></h2>
+				</br>
+				
+				 
+                   El QX revolucionará el mercado de SSD SATA de 2,5 pulgadas para consumidores con su especificación dominante en el mercado. El QX utiliza la última memoria flash 3D QLC. No solo tiene la primera y mayor capacidad de almacenamiento de 15,3 TB de la industria, sino que también tiene la primera vida de escritura de la industria de hasta 2560 TB.
+                   </br>
+                    </br>
+                   La durabilidad ultra alta proporciona a los consumidores estabilidad y confiabilidad. El potente QX admite caché dual inteligente, incluida la tecnología SLCCaching y el búfer de caché DRAM. esto hace que ofrezca 560/480 MB por segundo de velocidad de lectura / escritura ultrarrápida para una experiencia de usuario fluida. Al mismo tiempo, también tiene excelentes características como bajo consumo de energía, resistencia a los golpes, ausencia de ruido y más.
+                   </br>
+                    </br>
+                     </br>
+                    
+
+                   Con la enorme capacidad de almacenamiento de terabytes de un disco duro mecánico y el rendimiento de lectura / escritura que no se encuentra en los discos duros mecánicos tradicionales, puede revolucionar y redefinir el SSD SATA de 2,5 pulgadas para consumidores con su enorme capacidad de almacenamiento de 15,3 TB. El QX también admite el comando de optimización TRIM de Windows. Con esto se pueden liberar bloques libres, permitiendo que el sistema operativo los utilice más tarde inmediatamente al escribir datos.
+                   </br>
+                    </br>
+
+                   La tecnología de control de acceso optimizada de NCQ puede acelerar la transferencia y el rendimiento de escritura del SSD. Además, se reduce eficazmente la degradación del rendimiento y el desgaste de la unidad. Esto puede prolongar la vida útil del SSD perfectamente. El mecanismo de gestión de algoritmo inteligente incorporado tiene funciones como la recolección de basura que pueden garantizar la eficiencia de la operación. Esta función mejora la confiabilidad de la transferencia de datos y proporciona a los consumidores un SSD compacto y confiable con una capacidad masiva.
+
+
+				</p>
+			</br>
+			 </br>
+			  </br>
+
+
+				<p>
+					Si están pensando en adquirir una de las nuevas tarjetas gráficas GeForce RTX serie 30, lo mejor será realizar la compra por adelantado, ya que parece que habrá pocas existencias de las RTX 3090, RTX 3080 y RTX 3070 hasta fin de año.
+					</br>
+			        	</br>
+                   <b> Habrá una cantidad limitada de tarjetas NVIDIA GeForce RTX 30 hasta fin de año </b>
+                   </br>
+                    </br>
+                    Una fuente de la industria (la cual no se reveló el nombre), dijo a TweakTown que después del lanzamiento “no habrá stock disponible hasta fin de año”. Se dice que la primera ola de tarjetas es muy pequeña, y que incluso podría ser el lanzamiento más pequeño en muchos años.
+                    </br>
+                     </br>
+
+                    Por ahora, parece que las existencias serán extremadamente bajas durante los próximos meses. ¿El motivo? Todavía se desconoce el desempeño de Samsung con su nodo de 8nm, por lo que es posible que NVIDIA no quiera hacer demasiados pedidos antes que la empresa japonesa mejore su producción.
+                    </br>
+                     </br>
+                    Además, podrían estar esperando a ver qué hace AMD con su revelación de RDNA 2, aunque algunas fuentes aseguran que AMD está en racha con Ryzen y que “Big Navi simplemente los arrastrará hacia abajo“. Tampoco sabemos si esta decisión por parte de NVIDIA está relacionada en algún punto con la pandemia por coronavirus.
+
+                    </br>
+                     </br>
+                     <img src="imagenes/img20.jpg"  alt="" class="centrado"><cite>https://esdegamers.com/2020/09/nvidia-presenta-su-nueva-generacion-de-tarjetas-graficas-geforce-rtx-30/</cite>
+
+                      </br>
+                       </br>
+                        </br>
+                         </br>
+
+                    <b>HARDWAREIntel anuncia su nueva serie Tiger Lake de 11a generación, junto con los gráficos integrados Iris Xe</b>
+                     </br>
+                      </br>
+
+                      Intel anunció oficialmente sus procesadores Tiger Lake de 11a generación para notebooks, que contarán con los nuevos gráficos integrados Xe. Se destaca la compatibilidad con Thunderbolt 4, Wi-Fi 6, y un gran salto en el rendimiento y en la duración de la batería con respecto a los chips Ice Lake.
+
+                       </br>
+                        </br>
+                        La empresa comenzó lanzando nueve modelos de esta 11a generación para su serie U e Y. Liderado por el Core i7-1185G7, que ofrece velocidades base de 3.00 GHz, un turbo máximo de un solo núcleo de hasta 4.8 GHz y un turbo máximo de todos los núcleos de hasta 4.3 GHz. También cuenta con la versión más poderosa de los gráficos integrados Iris Xe de Intel, con 96 CUs y una velocidad de gráficos máxima de 1,35 GHz.
+
+                       </br>
+                        </br>
+
+                        La nueva línea de 11a generación se basa en el nodo de 10 nm, similar a los modelos actuales de Ice Lake de 10a generación, pero se actualiza a la arquitectura Willow Core con un nuevo diseño SuperFin de 10 nm que, según Intel, ofrecerá mejores velocidades con un menor consumo de energía. .
+
+                       </br>
+                        </br>
+                        Aunque Intel no está siendo muy específico, promete que los nuevos chips ofrecerán velocidades un 20% más rápida para las tareas diarias y de oficina. Además aseguran más de una hora extra de duración de batería para tareas multimedia.
+
+
+				</p>
+
+			</br>
+			           <img src="imagenes/img19.webp"  alt="" class="centrado"><cite>https://www.cnet.com/es/noticias/tiger-lake-intel-impulsa-velocidad-laptops/</cite>
+
+
+			
+			 </br>
+			  </br>
+			   </br>
+			    </br>
+
+
+
+				<p>
+					<b>TSMC iniciará la producción en 3nm para la segunda mitad de 2022</b>
+				</br>
+					</br>
+					Actualmente el líder en cuanto a litografías y procesos de fabricación de chips es la fundición taiwanesa TSMC. La compañía tiene gran ventaja frente a Samsung y frente a Intel, los otros dos gigantes de la industria. Este año empezarán a producir SoC bajo la litografía de 5nm (N5), pero la compañía ya trabaja en otros procesos. Concretamente en TSMC han hablado de los 5nm mejorados (N5P) y también de los 3nm (N3).
+					</br>
+			 </br>
+                    Estos nuevos procesos litográficos buscan mejorar el rendimiento de los chips y también la eficiencia. Con cada nueva generación se consigue precisamente esto, aumentar cantidad de transistores, mejorar la eficiencia y mejorar las frecuencias. Todo con la finalidad de conseguir chips cada vez más potentes con un consumo controlado.
+                    </br>
+			 </br>
+                    La previsión es que el próximo mes de septiembre ya veamos los primeros SoC para smartphone basados en los 5nm. Estos nuevos chips se basan en la tecnología EUV y ofrecen interesantes mejoras. Se ha conseguido un aumento de rendimiento del 15% con el mismo consumo respecto a los 7nm. Bajo un rendimiento igual, el consumo energético de los 5nm mejora un 30% con respecto a los 7nm. Finalmente la densidad lógica de los 5nm aumenta un 80% con respecto a los 7nm.
+                    </br>
+			 </br>
+                    Para el 2021 veremos los N5P que ofrecerán una reducción del consumo del 10% o bien un 5% más de rendimiento al mismo consumo. Adicionalmente TSMC ha destacado que el diseño nodelet de los N5, que se denominara N4 (4nm) iniciara su producción de riesgo en el Q4 2021. Sobre este proceso no han dado datos de rendimiento o consumo energético. Se espera que este proceso N4 se de en masa durante la primera mitad de 2022.
+                    </br>
+			 </br>
+                    Finalmente, los 3nm (N3) de TSMC se empezarían a producir durante la segunda mitad de 2022. Se espera que N3 ofrezca una eficiencia energética del 25-30% con respecto a N5. Adicionalmente se espera una mejora de rendimiento del 10-15% con el mismo consumo. También se aumentará la densidad lógica, que crecerá en un 70%.
+
+
+
+				</p>
+
+				</br>
+			 </br>
+			   </br>
+			 </br>
+			 <p>
+			 	<h3><b>JEDEC anuncia el estándar UFS 2.2</b></h3>
+			 
+			 	
+			 	Hasta el momento podíamos encontrar los estándares UFS 2.1 destinado a smartphone de gama baja y UFS 3.1 para smartphone de gama alta. La llegada del UFS 2.2 llega para reemplazar el estándar UFS 2.2 destinado a smartphone de gama baja.
+			 	   </br>
+			 </br>
+                Para este nuevo estándar UFS 2.2 se ha integrado la característica Write Booster. Esta es la única gran mejora de este nuevo estándar, que mejora la velocidad de escritura sobre el estándar precedentes. Lo que nos ofrecerá serán mejoras en la carga de aplicaciones, la caché y similares. Una mejora de rendimiento que siempre es de agradecer.
+                   </br>
+			 </br>
+                Mediatek ha sido la primera en anunciar SoC con compatibilidad con este estándar. Es posible que Qualcomm o Samsung, entre otros, deberían ofrecer soporte a estas memorias en breve. No hay fechas, pero es posible que los primeros smartphones con estas memorias lleguen para finales de año, aprovechando el periodo navideño. Lo mejor es que los usuarios que adquieran smartphone de gama de entrada obtendrán mejores prestaciones por el mismo o incluso por menos dinero.
+
+			 </p>
+			  </br>
+			   <img src="imagenes/img18.jpg"  alt="" class="centrado"><cite>https://www.profesionalreview.com/2020/08/19/ufs-2-2-se-lanza-oficialmente/</cite>
+			   </br>
+
+			    </br>
+			     </br>
+			      </br>
+			       </br>
+			        </br>
+			         </br>
+			          </br>
+			           </br>
+			            </br>
+			             </br>
+			              </br>
+			               </br>
+			                </br>
+			                 </br>
+			                  </br>
+		  
+
+
+            <p>Citas</p>
+			 <cite>https://hardwaresfera.com/noticias/hardware/teamgroup-ssd-qx-15tb/</cite>
+			</br>
+			
+	
+		<cite>https://www.hd-tecnologia.com/habra-una-cantidad-limitada-de-tarjetas-nvidia-geforce-rtx-30-hasta-fin-de-ano/</cite>
+		</br>
+			 </br>
+	
+		
+		 <cite>https://www.hd-tecnologia.com/intel-anuncia-su-nueva-serie-tiger-lake-de-11a-generacion-junto-con-los-graficos-integrados-iris-xe/</cite>
+		 </br>
+		
+		 
+		  <cite> https://hardwaresfera.com/noticias/hardware/tsmc-proceso-3nm/</cite>
+		   </br>
+		
+		 
+
+		  <cite>https://hardwaresfera.com/noticias/hardware/estandar-ufs-2-2/</cite>
+
+
+
+				
+
+            </div>
+
+
+           
+   
+
+		</div>
+		 
+		
+
+		<div class="publicidad">
+
+		</br>
+		</br>
+		</br>
+		</br>
+	
+		
+		
+
+ 
+
+		<iframe src="https://www.google.com/maps/embed?pb=!4v1599200156041!6m8!1m7!1skflnWaUCJS6GukWkuDAlkQ!2m2!1d5.681172901273731!2d-76.64649968198805!3f303.24294377396933!4f-1.9750417672996292!5f0.7820865974627469" width="370" height="220" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+
+		</div>
+
+
+	
+	</div>
+	<div class="pie_pagina">
+		<h10>Universidad Tecnológica del Chocó</h10>
+	</br>
+		<h20>Alumnos:</h20>
+		</br>
+		
+		
+		<h30>Jose Angel Prens Mosquera ------Diego Gamboa Parra------Nikoll Vanessa Mosquera Cuesta</h30>
+	</br>
+	</br>
+	<h40>Quibdó, Chocó (Colombia)</h40>
+
+		
+
+
+
+
+	</div>
+
+
+
+	<script>
+		//const contenido = document.querySelector('#contContenido');
+		const contenidos = document.getElementsByClassName("informacion");
+		const links = document.getElementsByTagName("a");
+		for (var i = 0; i < links.length; i++) {
+			links[i].addEventListener("click", function(){
+				id = this.hash.trim();
+				if(id){
+					ocultarContenidos();
+					var elemento = document.querySelector(id);
+					elemento.hidden = false;
+				}
+			});
+		}
+		function ocultarContenidos(){
+			if(contenidos.length){
+				for (var i = 0; i < contenidos.length; i++) {
+					contenidos[i].hidden=true;
+				}
+			}
+		} 
+		ocultarContenidos();
+		contenidos[0].hidden = false;
+		//contenidos.setAttribute("display","none");
+		//contenido.src = "pagina/inicio.html";
+	</script> 
+</body>
+</html>
